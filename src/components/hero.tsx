@@ -7,8 +7,8 @@ export function Hero() {
             Hi, I&apos;m Louis
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-light">
-            A curious Software Engineer that likes to build things <br />
-            and solve complex problems
+            A curious Software Engineer that likes <br />
+            to build things and solve complex problems
           </p>
         </div>
       </div>
