@@ -1,6 +1,4 @@
 import { Poppins, Playfair_Display } from 'next/font/google'
-import { Button } from "@/components/ui/button"
-import Link from 'next/link'
 import { SocialLinks } from '@/components/social-links'
 import { Navbar } from '@/components/navbar';
 import './globals.css'
@@ -32,10 +30,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-900 text-white`}
-      >
+        className={`${poppins.variable} ${playfair.variable} font-sans bg-gray-900 text-white`}>
         <Navbar />
-
         <main className="pt-16">{children}</main>
         <SocialLinks />
         <footer className="bg-gray-800 text-white py-8">
