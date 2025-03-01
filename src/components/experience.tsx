@@ -4,21 +4,21 @@ const experiences = [
     position: 'Software Engineer',
     period: '2024 - Present',
     description:
-      'I create modular React.js components for data visualization along with the API’s needed to connect them to several other micro-services. At the same time I develop and deploy ETL pipelines on cloud platforms to streamline data processing. I also do a lot of SQL within the database to improve performance and scalability.',
+      'I design event-driven architectures using Kotlin, Python, and Kafka to enable real-time data streaming, while optimizing ETL pipelines with Scala, Apache Spark, and AWS EMR for large-scale data processing. I create modular, reusable React.js components for dynamic data visualization, integrating them with APIs in TypeScript and Node.js. My work also includes optimizing SQL queries to improve database performance and enhance data retrieval. I monitor system performance with tools like AWS CloudWatch, Datadog, and Splunk, and streamline deployments by automating CI/CD pipelines. I collaborate closely with stakeholders to ensure technical solutions align with business objectives and deliver meaningful outcomes.',
   },
   {
     company: 'University of Wisconsin - Madison',
     position: 'Computer Science Tutor',
     period: '2023 - 2024',
     description:
-      'I tutored students in Java and Python, simplifying complex concepts and tailoring lessons to individual needs. Created a supportive, engaging environment for learning Computer Science and Data Science.',
+      'I tutored students in Java and Python, breaking down complex concepts and customizing lessons to meet individual learning needs. I fostered a supportive and engaging environment, helping students build a strong foundation in Computer Science and Data Science.',
   },
   {
     company: 'Thomson Reuters',
     position: 'Software Engineer Intern',
     period: '2021 - 2022',
     description:
-      'I worked as a Frontend Web Developer in an agile team, designing responsive and accessible UI components while refactoring and modernizing legacy JavaScript code to improve performance and maintainability. Did a lot of React.js and Web Accessibility work.',
+      'I worked as a Frontend Web Developer in an agile team focused on developing static content for a cloud-based legal research web application. I enhanced the frontend UI using React.js and JQuery while modernizing legacy code to improve performance and ensure Web Accessibility compliance. Throughout the software design cycle, I gained experience in issue tracking, code review, development environments, and unit testing. I also collaborated with UX and accessibility teams to strategically plan code design, optimizing both user experience and accessibility standards.',
   },
 ];
 

@@ -19,11 +19,14 @@ export function About() {
               About Me
             </h2>
             <p className="text-gray-300 mb-6 font-light">
-              I’m a software engineer passionate about building functional,
-              user-focused digital experiences. My expertise lies in developing
-              Full Stack applications and real-time data pipelines. I prioritize
-              rapid prototyping and aligning solutions with business needs,
-              always striving for innovative approaches to get the job done.
+              I&apos;m a software engineer passionate about building scalable,
+              data-driven systems and real-time analytics solutions. My
+              expertise spans full-stack development and data engineering, with
+              a growing focus on building efficient data pipelines and
+              infrastructure. I prioritize rapid prototyping, performance
+              optimization, and aligning solutions with business needs—always
+              seeking innovative ways to transform data into actionable
+              insights.
             </p>
             <p className="text-gray-300 font-light">
               When I&apos;m not coding, you can find me exploring new

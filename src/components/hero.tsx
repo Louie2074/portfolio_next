@@ -1,3 +1,5 @@
+
+
 export function Hero() {
   return (
     <section className="bg-gradient-to-r from-purple-900 to-indigo-900 text-white py-20 min-h-[10vh] flex items-center justify-center">

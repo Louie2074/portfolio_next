@@ -4,22 +4,24 @@ const skills = [
   {
     name: 'Frontend Development',
     icon: Code,
-    description: 'HTML, TypeScript, React, Next.js etc.',
+    description: 'HTML, CSS, TypeScript, JavaScript, React.js, Next.js',
   },
   {
     name: 'Backend Development',
     icon: Server,
-    description: 'Node.js, Flask, Spring, GraphQL etc.',
+    description:
+      'Java, Python, Node.js, Flask, Spring Boot, GraphQL, RESTful, Microservices',
   },
   {
     name: 'Big Data',
     icon: Database,
-    description: 'Kafka, Kotlin, Scala, ETL, SQL etc.',
+    description: 'Kotlin, Scala, Kafka, Spark, ETL, SQL, R, Apache Druid',
   },
   {
     name: 'Cloud/Deployment',
     icon: Cloudy,
-    description: 'Docker, AWS, Serverless, CI/CD etc.',
+    description:
+      'AWS, Docker, Serverless, CI/CD, GitHub Actions, Spinnaker, Jenkins, Datadog, Splunk, Firebase, Git',
   },
 ];
 
