@@ -37,7 +37,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 bg-gray-800">
+    <section id="projects" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -57,7 +57,7 @@ export function Projects() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.12 }}
               whileHover={{ y: -6, transition: { duration: 0.2 } }}
-              className="bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-700 hover:border-purple-500/50 transition-colors duration-300 flex flex-col"
+              className="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:border-purple-500/50 transition-colors duration-300 flex flex-col"
             >
               <div className="flex-1">
                 <h3 className="text-lg font-semibold text-white mb-1">{project.name}</h3>
@@ -76,7 +76,7 @@ export function Projects() {
                 {project.tech.map((t) => (
                   <span
                     key={t}
-                    className="text-xs font-medium bg-gray-800 text-gray-300 px-2 py-1 rounded-md border border-gray-700"
+                    className="text-xs font-medium bg-gray-700 text-gray-300 px-2 py-1 rounded-md border border-gray-600"
                   >
                     {t}
                   </span>

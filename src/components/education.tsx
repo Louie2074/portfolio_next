@@ -7,20 +7,13 @@ const education = [
   {
     school: 'University of Wisconsin - Madison',
     location: 'Madison, WI',
-    degree: 'Bachelor of Science in Computer Science and Data Science',
-    period: 'Sep 2020 – May 2024',
+    degree: 'Bachelor of Science in Computer Science, Data Science',
+    period: 'Aug 2020 – May 2024',
     details: [
-      'GPA: 3.53 / 4.0',
-      'Awards: Mercile J. Lee Scholarship, Thermo Fisher Scientific STEM Scholarship',
-      'Relevant Coursework: Programming I–IV, Data Structures & Algorithms, Computer Organization, Data Modeling, Artificial Intelligence',
+      'GPA: 3.6 / 4.0',
+      'Relevant Coursework: Data Structures & Algorithms, Computer Organization, Data Modeling, AI',
+      'Extracurriculars: Theta Tau Engineering Fraternity, Vietnamese Student Association, Web Development Club',
     ],
-  },
-  {
-    school: 'National University of Singapore',
-    location: 'Singapore',
-    degree: 'University of Wisconsin Singapore Study Abroad Program',
-    period: 'Jan 2023 – May 2023',
-    details: [],
   },
 ];
 
@@ -58,19 +51,17 @@ export function Education() {
                   </div>
                   <p className="text-purple-400 font-medium mb-1">{edu.degree}</p>
                   <p className="text-gray-500 text-sm mb-3">{edu.location}</p>
-                  {edu.details.length > 0 && (
-                    <ul className="space-y-1">
-                      {edu.details.map((detail) => (
-                        <li
-                          key={detail}
-                          className="text-gray-400 text-sm font-light flex items-start gap-2"
-                        >
-                          <span className="text-purple-500 mt-1 flex-shrink-0">•</span>
-                          {detail}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
+                  <ul className="space-y-1">
+                    {edu.details.map((detail) => (
+                      <li
+                        key={detail}
+                        className="text-gray-400 text-sm font-light flex items-start gap-2"
+                      >
+                        <span className="text-purple-500 mt-1 flex-shrink-0">•</span>
+                        {detail}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </div>
             </motion.div>
