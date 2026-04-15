@@ -19,7 +19,7 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-800 shadow-sm fixed w-full z-10">
+    <header className="bg-gray-800 shadow-sm fixed w-full z-50">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link
@@ -57,7 +57,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {isOpen && (
-        <nav className="md:hidden">
+        <nav className="md:hidden bg-gray-800 border-t border-gray-700 shadow-lg">
           <ul className="flex flex-col items-center py-4">
             {navItems.map((item) => (
               <li key={item.name} className="w-full">
