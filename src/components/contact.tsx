@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -7,10 +10,22 @@ export function Contact() {
   return (
     <section id="contact" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-purple-400 font-serif">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl font-bold text-center mb-12 text-purple-400 font-serif"
+        >
           Get In Touch
-        </h2>
-        <div className="max-w-2xl mx-auto">
+        </motion.h2>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="max-w-2xl mx-auto"
+        >
           <form
             action="https://formspree.io/f/mleagwej"
             method="POST"
@@ -56,8 +71,8 @@ export function Contact() {
               </label>
               <Textarea
                 id="message"
+                name="message"
                 required
-                name="message" // This is the field name that Formspree expects
                 placeholder="Your message here..."
                 className="h-32 bg-gray-800 border-gray-700 text-white"
               />
@@ -71,7 +86,7 @@ export function Contact() {
               <Send className="ml-2 h-5 w-5" />
             </Button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
