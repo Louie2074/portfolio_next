@@ -1,49 +1,70 @@
-import { Code, Database, Server, Cloudy } from 'lucide-react';
+'use client';
+
+import { motion } from 'framer-motion';
+import { Code, Database, Server, Wrench } from 'lucide-react';
 
 const skills = [
   {
     name: 'Frontend Development',
     icon: Code,
-    description: 'HTML, CSS, TypeScript, JavaScript, React.js, Next.js',
+    items: ['HTML', 'CSS', 'TypeScript', 'JavaScript', 'React.js', 'Next.js'],
   },
   {
     name: 'Backend Development',
     icon: Server,
-    description:
-      'Java, Python, Node.js, Flask, Spring Boot, GraphQL, RESTful, Microservices',
+    items: ['Java', 'Python', 'C', 'Node.js', 'Flask', 'GraphQL', 'RESTful APIs'],
   },
   {
-    name: 'Big Data',
+    name: 'Data & Analytics',
     icon: Database,
-    description: 'Kotlin, Scala, Kafka, Spark, ETL, SQL, R, Apache Druid',
+    items: ['SQL', 'R', 'Apache Druid', 'Kafka', 'Spark', 'ETL Pipelines'],
   },
   {
-    name: 'Cloud/Deployment',
-    icon: Cloudy,
-    description:
-      'AWS, Docker, Serverless, CI/CD, GitHub Actions, Spinnaker, Jenkins, Datadog, Splunk, Firebase, Git',
+    name: 'Tools & Cloud',
+    icon: Wrench,
+    items: ['AWS', 'Firebase', 'Docker', 'Git', 'CI/CD', 'Unix', 'VS Code'],
   },
 ];
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 bg-gray-900">
+    <section id="skills" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-purple-400 font-serif">
-          My Skills
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {skills.map((skill) => (
-            <div
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-3xl font-bold text-center mb-12 text-purple-400 font-serif"
+        >
+          Skills
+        </motion.h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {skills.map((skill, i) => (
+            <motion.div
               key={skill.name}
-              className="bg-gray-800 p-6 rounded-lg shadow-md"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              whileHover={{ y: -6, transition: { duration: 0.2 } }}
+              className="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-purple-500/50 transition-colors duration-300"
             >
-              <skill.icon className="h-12 w-12 text-purple-500 mb-4" />
-              <h3 className="text-xl font-semibold mb-2 text-white">
-                {skill.name}
-              </h3>
-              <p className="text-gray-400 font-light">{skill.description}</p>
-            </div>
+              <div className="bg-purple-600/20 p-3 rounded-lg w-fit mb-4">
+                <skill.icon className="h-6 w-6 text-purple-400" />
+              </div>
+              <h3 className="text-lg font-semibold mb-4 text-white">{skill.name}</h3>
+              <div className="flex flex-wrap gap-2">
+                {skill.items.map((item) => (
+                  <span
+                    key={item}
+                    className="text-xs font-medium bg-gray-800 text-gray-300 px-2 py-1 rounded-md border border-gray-700"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
           ))}
         </div>
       </div>
