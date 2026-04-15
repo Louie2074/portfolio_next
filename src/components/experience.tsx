@@ -1,11 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
+import { Globe, BookOpen, BarChart2, Scale } from 'lucide-react';
 
 const experiences = [
   {
     company: 'Expedia Group',
+    icon: Globe,
     location: 'Seattle, WA',
     position: 'Software Engineer II',
     period: 'Aug 2024 – Present',
@@ -23,6 +24,7 @@ const experiences = [
   },
   {
     company: 'University of Wisconsin - Madison',
+    icon: BookOpen,
     location: 'Madison, WI',
     position: 'Computer Science Tutor',
     period: 'Sep 2023 – May 2024',
@@ -33,6 +35,7 @@ const experiences = [
   },
   {
     company: 'Expedia Group',
+    icon: BarChart2,
     location: 'Seattle, WA',
     position: 'Software Engineer Intern',
     period: 'May 2023 – Jul 2023',
@@ -44,6 +47,7 @@ const experiences = [
   },
   {
     company: 'Thomson Reuters',
+    icon: Scale,
     location: 'Minneapolis, MN',
     position: 'Software Engineer Intern',
     period: 'May 2022 – Aug 2022',
@@ -80,7 +84,7 @@ export function Experience() {
             >
               <div className="flex items-start gap-4">
                 <div className="bg-purple-600/20 p-3 rounded-lg mt-1 flex-shrink-0">
-                  <Briefcase className="text-purple-400 h-6 w-6" />
+                  <exp.icon className="text-purple-400 h-6 w-6" />
                 </div>
                 <div className="flex-1">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1 mb-1">

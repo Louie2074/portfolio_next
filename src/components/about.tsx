@@ -52,7 +52,7 @@ export function About() {
             </p>
             <p className="text-gray-300 font-light leading-relaxed text-lg">
               When I&apos;m not coding, you can find me travelling, playing
-              spikeball, weight training, or catching the latest Marvel movies.
+              spikeball, weight training, or reading up about credit cards.
             </p>
           </motion.div>
         </div>
