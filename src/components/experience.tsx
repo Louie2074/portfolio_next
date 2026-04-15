@@ -7,32 +7,57 @@ const experiences = [
   {
     company: 'Expedia Group',
     location: 'Seattle, WA',
-    position: 'Software Engineering Intern',
+    position: 'Software Engineer II',
+    period: 'Aug 2024 – Present',
+    bullets: [
+      'Led the development of a streaming pipeline using Kotlin Spring Boot, Apache Kafka and Cassandra, processing 5M+ events daily for 200+ lodging partners, enabling real-time analytics and performance monitoring.',
+      'Directed a group of vendor engineers to migrate legacy analytical dashboards to in-house real-time dashboards, reducing load times from 30s to 3s.',
+      'Optimized Apache Druid SQL queries by 80% (from 5s to 1s average query time), improving OLAP performance for business analytics.',
+      'Identified a major manual bottleneck in the UI deployment process and automated release scripts with Python, saving 10+ hours per week and reducing deployment failures by 70%.',
+      'Maintained and improved batch ETL workflows with Apache Spark (Scala) and Airflow, enhancing data accuracy and freshness for downstream reporting used by 50+ stakeholders.',
+      'Set up monitoring and alerting with Datadog and Splunk, ensuring 99.9% availability and data integrity.',
+      'Coordinated with 4 cross-geo engineering teams to align API contracts and data schemas.',
+      'Mentored an engineering intern in developing a Node.js Lambda notification scheduler that automated configurable stakeholder reminders via email and messaging.',
+      'Analyzed 5TB+ of historical data in Apache Iceberg data lake via Querybook, identifying data quality issues affecting 50% of customer operations reports and implementing validation fixes.',
+    ],
+  },
+  {
+    company: 'University of Wisconsin - Madison',
+    location: 'Madison, WI',
+    position: 'Computer Science Tutor',
+    period: 'Sep 2023 – May 2024',
+    bullets: [
+      'Provided one-on-one and group tutoring in Java and Python, improving students\' problem-solving skills.',
+      'Assisted students with debugging, unit testing, and code reviews, reinforcing best coding practices.',
+    ],
+  },
+  {
+    company: 'Expedia Group',
+    location: 'Seattle, WA',
+    position: 'Software Engineer Intern',
     period: 'May 2023 – Jul 2023',
     bullets: [
-      'Collaborated in a team of 15+ engineers to develop a high-performance real-time data analytics dashboard, cutting AWS costs by 75%.',
-      'Implemented GraphQL schemas and resolvers for frontend-backend communication to ensure efficient and accurate data transfer.',
-      'Optimized SQL queries within the Apache Druid database to reduce dashboard latency by over 60% (from >3s to <1s).',
-      'Created modular React.js components for interactive dashboard tiles to support an intuitive user interface and clear data visualization.',
+      'Built real-time analytics dashboards in React.js and TypeScript with responsive, data-driven visualizations.',
+      'Developed GraphQL APIs in Node.js to serve analytics data, enabling efficient access across frontend applications.',
+      'Implemented reusable and modular UI components improving code maintainability and developer productivity.',
     ],
   },
   {
     company: 'Thomson Reuters',
     location: 'Minneapolis, MN',
-    position: 'Software Engineering Intern',
+    position: 'Software Engineer Intern',
     period: 'May 2022 – Aug 2022',
     bullets: [
-      'Worked in an agile team that concentrated on developing static content for a cloud-based legal research web application.',
-      'Enhanced Frontend UI using React.js and jQuery while modernizing legacy code and ensuring Web Accessibility support.',
-      'Gained exposure to the software design cycle including issue tracking, code review, development environments, and unit testing.',
-      'Coordinated with UX and accessibility teams to strategically plan code design, optimizing user experience and accessibility standards.',
+      'Enhanced UI/UX by modernizing a React.js and JavaScript frontend, improving accessibility and usability.',
+      'Gained exposure to Agile development methodologies, conducting code reviews and unit testing.',
+      'Refactored legacy jQuery code into React.js components, reducing technical debt and improving maintainability.',
     ],
   },
 ];
 
 export function Experience() {
   return (
-    <section id="experience" className="py-20 bg-gray-900">
+    <section id="experience" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -46,12 +71,12 @@ export function Experience() {
         <div className="max-w-3xl mx-auto space-y-6">
           {experiences.map((exp, i) => (
             <motion.div
-              key={exp.company}
+              key={`${exp.company}-${exp.period}`}
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-700 hover:border-purple-500/50 transition-colors duration-300"
+              transition={{ duration: 0.6, delay: i * 0.1 }}
+              className="bg-gray-900 rounded-xl p-6 shadow-lg border border-gray-700 hover:border-purple-500/50 transition-colors duration-300"
             >
               <div className="flex items-start gap-4">
                 <div className="bg-purple-600/20 p-3 rounded-lg mt-1 flex-shrink-0">
@@ -71,7 +96,7 @@ export function Experience() {
                         initial={{ opacity: 0, x: -10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.4, delay: i * 0.15 + j * 0.07 }}
+                        transition={{ duration: 0.4, delay: i * 0.1 + j * 0.05 }}
                         className="text-gray-400 text-sm font-light flex items-start gap-2"
                       >
                         <span className="text-purple-500 mt-1 flex-shrink-0">•</span>
