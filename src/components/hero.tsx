@@ -43,17 +43,22 @@ export function Hero() {
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.45 }}
             className="flex flex-wrap gap-x-4 gap-y-2 justify-center text-sm text-gray-400"
           >
-            <span>louishguyen01@hotmail.com</span>
-            <span className="hidden sm:inline text-gray-600">·</span>
-            <span>651-269-5551</span>
-            <span className="hidden sm:inline text-gray-600">·</span>
             <a
-              href="https://louisnguyen.me"
+              href="https://www.linkedin.com/in/nguyen2001"
               target="_blank"
               rel="noopener noreferrer"
               className="text-purple-400 hover:text-purple-300 transition-colors"
             >
-              louisnguyen.me
+              LinkedIn
+            </a>
+            <span className="hidden sm:inline text-gray-600">·</span>
+            <a
+              href="https://louiethedev.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-purple-400 hover:text-purple-300 transition-colors"
+            >
+              louiethedev.com
             </a>
           </motion.div>
         </div>

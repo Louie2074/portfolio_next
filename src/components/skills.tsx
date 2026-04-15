@@ -1,34 +1,34 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Code, Database, Server, Wrench } from 'lucide-react';
+import { Code, Database, Server, Cloud } from 'lucide-react';
 
 const skills = [
   {
-    name: 'Frontend Development',
+    name: 'Languages',
     icon: Code,
-    items: ['HTML', 'CSS', 'TypeScript', 'JavaScript', 'React.js', 'Next.js'],
+    items: ['Java', 'JavaScript', 'Python', 'Kotlin', 'Scala', 'HTML', 'CSS', 'SQL', 'C', 'R', 'TypeScript'],
   },
   {
-    name: 'Backend Development',
+    name: 'Technologies',
     icon: Server,
-    items: ['Java', 'Python', 'C', 'Node.js', 'Flask', 'GraphQL', 'RESTful APIs'],
+    items: ['React.js', 'Next.js', 'Node.js', 'Flask', 'GraphQL', 'Spring Boot', 'Microservices', 'Kafka', 'Spark', 'RESTful', 'ETL'],
   },
   {
-    name: 'Data & Analytics',
+    name: 'Databases',
     icon: Database,
-    items: ['SQL', 'R', 'Apache Druid', 'Kafka', 'Spark', 'ETL Pipelines'],
+    items: ['MySQL', 'PostgreSQL', 'Hive', 'ScyllaDB', 'Apache Druid', 'MongoDB', 'S3'],
   },
   {
-    name: 'Tools & Cloud',
-    icon: Wrench,
-    items: ['AWS', 'Firebase', 'Docker', 'Git', 'CI/CD', 'Unix', 'VS Code'],
+    name: 'Cloud & DevOps',
+    icon: Cloud,
+    items: ['AWS', 'Docker', 'Serverless', 'CI/CD', 'GitHub Actions', 'Spinnaker', 'Jenkins', 'Datadog', 'Splunk'],
   },
 ];
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 bg-gray-800">
+    <section id="skills" className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -48,7 +48,7 @@ export function Skills() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               whileHover={{ y: -6, transition: { duration: 0.2 } }}
-              className="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-purple-500/50 transition-colors duration-300"
+              className="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 hover:border-purple-500/50 transition-colors duration-300"
             >
               <div className="bg-purple-600/20 p-3 rounded-lg w-fit mb-4">
                 <skill.icon className="h-6 w-6 text-purple-400" />
@@ -58,7 +58,7 @@ export function Skills() {
                 {skill.items.map((item) => (
                   <span
                     key={item}
-                    className="text-xs font-medium bg-gray-800 text-gray-300 px-2 py-1 rounded-md border border-gray-700"
+                    className="text-xs font-medium bg-gray-700 text-gray-300 px-2 py-1 rounded-md border border-gray-600"
                   >
                     {item}
                   </span>

@@ -8,7 +8,7 @@ import { Send } from 'lucide-react';
 
 export function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-900">
+    <section id="contact" className="py-20 bg-gray-800">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ export function Contact() {
                 name="name"
                 required
                 placeholder="Your Name"
-                className="bg-gray-800 border-gray-700 text-white"
+                className="bg-gray-900 border-gray-700 text-white"
               />
             </div>
             <div>
@@ -59,7 +59,7 @@ export function Contact() {
                 type="email"
                 required
                 placeholder="your@email.com"
-                className="bg-gray-800 border-gray-700 text-white"
+                className="bg-gray-900 border-gray-700 text-white"
               />
             </div>
             <div>
@@ -74,7 +74,7 @@ export function Contact() {
                 name="message"
                 required
                 placeholder="Your message here..."
-                className="h-32 bg-gray-800 border-gray-700 text-white"
+                className="h-32 bg-gray-900 border-gray-700 text-white"
               />
             </div>
             <Button
