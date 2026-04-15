@@ -32,35 +32,11 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="text-xl md:text-2xl mb-10 font-light text-gray-300"
+            className="text-xl md:text-2xl font-light text-gray-300"
           >
             Software Engineer passionate about building scalable systems and{' '}
             <span className="text-purple-400">transforming data into insights</span>
           </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.45 }}
-            className="flex flex-wrap gap-x-4 gap-y-2 justify-center text-sm text-gray-400"
-          >
-            <a
-              href="https://www.linkedin.com/in/nguyen2001"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-purple-400 hover:text-purple-300 transition-colors"
-            >
-              LinkedIn
-            </a>
-            <span className="hidden sm:inline text-gray-600">·</span>
-            <a
-              href="https://louiethedev.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-purple-400 hover:text-purple-300 transition-colors"
-            >
-              louiethedev.com
-            </a>
-          </motion.div>
         </div>
       </div>
 
