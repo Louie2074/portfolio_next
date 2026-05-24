@@ -23,6 +23,36 @@ const projects = [
       'Automated weekly health reports with week-over-week metric comparisons and visualizations delivered via styled HTML email.',
     ],
   },
+  {
+    name: 'Spotify Playlist Sync',
+    subtitle: 'Playlist Synchronization Tool',
+    period: 'Jan 2023 – Jul 2023',
+    tech: ['React.js', 'TypeScript', 'Spotify API', 'Firebase', 'Firestore'],
+    bullets: [
+      "Developed a React.js web app with TypeScript, utilizing Spotify's API for user authentication and playlist comparison.",
+      'Employed Google Firebase and Firestore to seamlessly deploy, host, and securely store data for the web application.',
+    ],
+  },
+  {
+    name: "Wolfram's Cellular Automata",
+    subtitle: 'Complex Pattern Generator',
+    period: 'Feb 2022 – Jun 2022',
+    tech: ['Python', 'NumPy', 'Matplotlib', 'Flask', 'Heroku'],
+    bullets: [
+      "Wrote a program in Python using NumPy and Matplotlib that visually generated Wolfram's cellular automata.",
+      'Packaged the program into a web application using the Flask framework and hosted it on the Heroku Cloud Platform.',
+    ],
+  },
+  {
+    name: 'Cryptocurrency Trading Bot',
+    subtitle: 'Automated Trading Software',
+    period: 'May 2021 – Aug 2022',
+    tech: ['Node.js', 'WebSocket', 'Coinbase API'],
+    bullets: [
+      'Designed a cryptocurrency trading algorithm that initiates trades when specified price targets are hit.',
+      'Utilized Node.js to build the bot and establish a WebSocket connection to the Coinbase API to retrieve real-time market data.',
+    ],
+  },
 ];
 
 export function Projects() {

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Globe, BarChart2 } from 'lucide-react';
+import { Globe, BarChart2, BookOpen, Scale } from 'lucide-react';
 
 const experiences = [
   {
@@ -31,8 +31,32 @@ const experiences = [
     period: 'May 2023 – Jul 2023',
     bullets: [
       'Built real-time analytics dashboards in React.js and TypeScript with responsive, data-driven visualizations.',
+      'Developed GraphQL APIs in Node.js to serve analytics data, enabling efficient access across frontend applications.',
       'Implemented reusable and modular UI components improving code maintainability and developer productivity.',
       'Wrote unit and integration tests for API and UI behavior, increasing coverage and reducing regressions.',
+    ],
+  },
+  {
+    company: 'University of Wisconsin - Madison',
+    icon: BookOpen,
+    location: 'Madison, WI',
+    position: 'Computer Science Tutor',
+    period: 'Sep 2023 – May 2024',
+    bullets: [
+      'Provided one-on-one and group tutoring in Java and Python, improving students\' problem-solving skills.',
+      'Assisted students with debugging, unit testing, and code reviews, reinforcing best coding practices.',
+    ],
+  },
+  {
+    company: 'Thomson Reuters',
+    icon: Scale,
+    location: 'Minneapolis, MN',
+    position: 'Software Engineer Intern',
+    period: 'May 2022 – Aug 2022',
+    bullets: [
+      'Enhanced UI/UX by modernizing a React.js and JavaScript frontend, improving accessibility and usability.',
+      'Refactored legacy jQuery code into React.js components, reducing technical debt and improving maintainability.',
+      'Gained exposure to Agile development methodologies, conducting code reviews and unit testing.',
     ],
   },
 ];
