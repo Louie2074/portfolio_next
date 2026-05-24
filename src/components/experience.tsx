@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Globe, BookOpen, BarChart2, Scale } from 'lucide-react';
+import { Globe, BarChart2 } from 'lucide-react';
 
 const experiences = [
   {
@@ -11,26 +11,16 @@ const experiences = [
     position: 'Software Engineer II',
     period: 'Aug 2024 – Present',
     bullets: [
-      'Led the development of a streaming pipeline using Kotlin Spring Boot, Apache Kafka and Cassandra, processing 5M+ events daily for 200+ lodging partners, enabling real-time analytics and performance monitoring.',
-      'Directed a group of vendor engineers to migrate legacy analytical dashboards to in-house real-time dashboards, reducing load times from 30s to 3s.',
-      'Optimized Apache Druid SQL queries by 80% (from 5s to 1s average query time), improving OLAP performance for business analytics.',
-      'Identified a major manual bottleneck in the UI deployment process and automated release scripts with Python, saving 10+ hours per week and reducing deployment failures by 70%.',
-      'Maintained and improved batch ETL workflows with Apache Spark (Scala) and Airflow, enhancing data accuracy and freshness for downstream reporting used by 50+ stakeholders.',
-      'Set up monitoring and alerting with Datadog and Splunk, ensuring 99.9% availability and data integrity.',
-      'Coordinated with 4 cross-geo engineering teams to align API contracts and data schemas.',
-      'Mentored an engineering intern in developing a Node.js Lambda notification scheduler that automated configurable stakeholder reminders via email and messaging.',
-      'Analyzed 5TB+ of historical data in Apache Iceberg data lake via Querybook, identifying data quality issues affecting 50% of customer operations reports and implementing validation fixes.',
-    ],
-  },
-  {
-    company: 'University of Wisconsin - Madison',
-    icon: BookOpen,
-    location: 'Madison, WI',
-    position: 'Computer Science Tutor',
-    period: 'Sep 2023 – May 2024',
-    bullets: [
-      'Provided one-on-one and group tutoring in Java and Python, improving students\' problem-solving skills.',
-      'Assisted students with debugging, unit testing, and code reviews, reinforcing best coding practices.',
+      'Engineer on the Service Data team, building the real-time and historical data infrastructure powering Workforce Management reporting for Expedia\'s global contact center operations.',
+      'Discovered a data mismatch between Salesforce and AWS Connect causing inaccurate agent productivity tracking, then owned end-to-end design and delivery of a self-healing AWS Lambda reconciliation system to resolve it, recovering $3M in annual revenue.',
+      'Built a Kafka streaming pipeline processing 5M+ events daily for 200+ lodging partners, enabling real-time analytics and performance monitoring.',
+      'Spearheaded team adoption of AI agentic tools (Claude Code, MCP) as the go-to resource for agentic workflows.',
+      'Reduced Druid SQL query runtime by 80% (5s to 1s), boosting OLAP performance for business analytics.',
+      'Automated UI deployment scripts with Python, saving 10+ hrs/week and cutting deployment failures by 70%.',
+      'Developed GraphQL APIs in Node.js powering real-time data access across high-traffic frontend applications, serving 10M+ requests daily.',
+      'Managed vendor engineers to migrate legacy dashboards to real-time in-house solutions, cutting load times by 3x.',
+      'Mentored an engineering intern in developing a Node.js Lambda notification scheduler, automating configurable stakeholder reminders via email and messaging.',
+      'Maintained Spark (Scala) and Airflow ETL workflows with data quality checks, ensuring data freshness and accuracy for 50+ stakeholders.',
     ],
   },
   {
@@ -41,20 +31,8 @@ const experiences = [
     period: 'May 2023 – Jul 2023',
     bullets: [
       'Built real-time analytics dashboards in React.js and TypeScript with responsive, data-driven visualizations.',
-      'Developed GraphQL APIs in Node.js to serve analytics data, enabling efficient access across frontend applications.',
       'Implemented reusable and modular UI components improving code maintainability and developer productivity.',
-    ],
-  },
-  {
-    company: 'Thomson Reuters',
-    icon: Scale,
-    location: 'Minneapolis, MN',
-    position: 'Software Engineer Intern',
-    period: 'May 2022 – Aug 2022',
-    bullets: [
-      'Enhanced UI/UX by modernizing a React.js and JavaScript frontend, improving accessibility and usability.',
-      'Gained exposure to Agile development methodologies, conducting code reviews and unit testing.',
-      'Refactored legacy jQuery code into React.js components, reducing technical debt and improving maintainability.',
+      'Wrote unit and integration tests for API and UI behavior, increasing coverage and reducing regressions.',
     ],
   },
 ];

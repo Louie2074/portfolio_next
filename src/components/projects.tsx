@@ -4,33 +4,23 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    name: 'Spotify Playlist Sync',
-    subtitle: 'Playlist Synchronization Tool',
-    period: 'Jan 2023 – Jul 2023',
-    tech: ['React.js', 'TypeScript', 'Spotify API', 'Firebase', 'Firestore'],
+    name: 'AI Bot Dashboard',
+    subtitle: 'Multi-Instance AI Bot Management',
+    period: '2024 – Present',
+    tech: ['Next.js', 'TypeScript', 'Hono', 'MongoDB', 'Fly.io', 'Docker', 'Supabase', 'MCP'],
     bullets: [
-      "Developed a React.js web app with TypeScript, utilizing Spotify's API for user authentication and playlist comparison.",
-      'Employed Google Firebase and Firestore to seamlessly deploy, host, and securely store data for the web application.',
+      'Built a personal dashboard and REST API for provisioning and managing isolated AI bot instances on Fly.io, each running on its own machine with a dedicated 1GB volume.',
+      'Engineered instance lifecycle management with Hono + TypeScript, Zod/OpenAPI validation, MongoDB, and an MCP endpoint for LLM-driven control across Telegram, Discord, and Slack.',
     ],
   },
   {
-    name: "Wolfram's Cellular Automata",
-    subtitle: 'Complex Pattern Generator',
-    period: 'Feb 2022 – Jun 2022',
-    tech: ['Python', 'NumPy', 'Matplotlib', 'Flask', 'Heroku'],
+    name: 'Personal Data Hub',
+    subtitle: 'MCP-Powered Health Data Aggregator',
+    period: '2024 – Present',
+    tech: ['TypeScript', 'Python', 'MCP', 'Oura API', 'Docker', 'Matplotlib'],
     bullets: [
-      "Wrote a program in Python using NumPy and Matplotlib that visually generated Wolfram's cellular automata.",
-      'Packaged the program into a web application using the Flask framework and hosted it on the Heroku Cloud Platform.',
-    ],
-  },
-  {
-    name: 'Cryptocurrency Trading Bot',
-    subtitle: 'Automated Trading Software',
-    period: 'May 2021 – Aug 2022',
-    tech: ['Node.js', 'WebSocket', 'Coinbase API'],
-    bullets: [
-      'Designed a cryptocurrency trading algorithm that initiates trades when specified price targets are hit.',
-      'Utilized Node.js to build the bot and establish a WebSocket connection to the Coinbase API to retrieve real-time market data.',
+      'Built a TypeScript MCP server with a pluggable hub-and-spoke connector architecture, aggregating personal health data from the Oura Ring API and exposing it over Streamable HTTP for real-time LLM consumption.',
+      'Automated weekly health reports with week-over-week metric comparisons and visualizations delivered via styled HTML email.',
     ],
   },
 ];

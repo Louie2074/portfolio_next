@@ -1,28 +1,33 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Code, Database, Server, Cloud } from 'lucide-react';
+import { Code, Database, Server, Cloud, Bot } from 'lucide-react';
 
 const skills = [
   {
     name: 'Languages',
     icon: Code,
-    items: ['Java', 'JavaScript', 'Python', 'Kotlin', 'Scala', 'HTML', 'CSS', 'SQL', 'C', 'R', 'TypeScript'],
+    items: ['Java', 'JavaScript', 'Python', 'Kotlin', 'Scala', 'HTML', 'CSS', 'SQL', 'TypeScript'],
   },
   {
     name: 'Technologies',
     icon: Server,
-    items: ['React.js', 'Next.js', 'Node.js', 'Flask', 'GraphQL', 'Spring Boot', 'Microservices', 'Kafka', 'Spark', 'RESTful', 'ETL'],
+    items: ['React.js', 'Next.js', 'Node.js', 'GraphQL', 'Spring Boot', 'Microservices', 'Kafka', 'Spark', 'Airflow', 'Supabase'],
   },
   {
     name: 'Databases',
     icon: Database,
-    items: ['MySQL', 'PostgreSQL', 'Hive', 'ScyllaDB', 'Apache Druid', 'MongoDB', 'S3'],
+    items: ['MySQL', 'PostgreSQL', 'Hive', 'ScyllaDB', 'Apache Druid', 'MongoDB', 'Cassandra'],
   },
   {
     name: 'Cloud & DevOps',
     icon: Cloud,
-    items: ['AWS', 'Docker', 'Serverless', 'CI/CD', 'GitHub Actions', 'Spinnaker', 'Jenkins', 'Datadog', 'Splunk'],
+    items: ['AWS', 'AWS Lambda', 'Docker', 'Fly.io', 'CI/CD', 'GitHub Actions', 'Spinnaker', 'Jenkins', 'Datadog', 'Splunk'],
+  },
+  {
+    name: 'AI & Agentic',
+    icon: Bot,
+    items: ['LLMs', 'MCP', 'Agentic AI', 'Prompt Engineering', 'Claude Code'],
   },
 ];
 
